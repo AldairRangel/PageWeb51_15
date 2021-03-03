@@ -10,6 +10,74 @@
                 <form action="" method="post"></form>
                 <fieldset>
                     <legend>Ejemplos de input</legend>
+                    <!--lista desplegable-->
+                    <div>
+                        <label for="">Carrera:</label>
+                        <select name="" id="">
+                            <option value="4">LTI</option>
+                            <option value="3">LA</option>
+                            <option value="8">CP</option>
+                            <option value="5">LNI</option>        
+                        </select>
+                    </div>
+                    <!--lista selección multiple-->
+                    <div>
+                        <label for="carrera">:Selec. carreras:</label>
+                        <select name="carrera" id="carrera" multiple>
+                            <option value="4">LTI</option>
+                            <option value="3">LA</option>
+                            <option value="8">CP</option>
+                            <option value="5">LNI</option>        
+                        </select>
+                    </div>
+
+                    <!--lista grupo de opciones-->
+                    <div>
+                        <label for="carreragpo">Carreras:</label>
+                        <select name="carreragp" id="carreragpo">
+                            <optgroup label="Profesionales">
+                                <option value="4">LTI</option>
+                                <option value="3">LA</option>
+                                <option value="8">CP</option>
+                                <option value="5">LNI</option>
+                            </optgroup>        
+                            <optgroup label="tecnicas">
+                                <option value="15">Desarrollo de software</option>        
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="masculino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="femenino">
+                    </div>
+
+                    <div>
+                        <input type="radio" name="genero" id="masculino">
+                        <input type="radio" name="genero" id="femenino">
+                    </div>
+                    <!--text area-->
+                    <div>
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <!--data list-->
+                    <div>
+                        <label for="lenguaje">Lenguaje</label>
+                        <input type="text" name="lenguajes" id="lenguaje" list="lenguajes">
+                        <datalist id="lenguajes">
+                            <option value="Python">
+                            <option value="Ruby">
+                            <option value="Javascript">
+                            <option value="c++">
+                            <option value="R">
+                            <option value="kotlin">
+                        </datalist>
+                    </div>
+
                     <div>
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nombre">
